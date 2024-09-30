@@ -8,14 +8,28 @@ h1 {
     color: #333;
 }
 
+/* Estiliza os links de navegação */
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove os marcadores das listas */
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline; /* Exibe os itens da lista em linha */
+    margin-right: 10px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    border: 2px solid #000; /* Adiciona uma borda aos links */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    color: #000; /* Cor do texto */
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
 }
 
 form label {

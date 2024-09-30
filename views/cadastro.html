@@ -39,6 +39,31 @@
         
         <button type="submit">Salvar</button>
     </form>
-    <script src="../js/app.js"></script>
+    <script>
+        document.getElementById('reservaForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Captura os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const placa = document.getElementById('placa').value;
+            const apartamento = document.getElementById('apartamento').value;
+            const bloco = document.getElementById('bloco').value;
+            const modelo = document.getElementById('modelo').value;
+            const cor = document.getElementById('cor').value;
+            const vaga = document.getElementById('vaga').value;
+
+            // Exibe os dados no console
+            console.log('Nome do Proprietário:', nome);
+            console.log('Placa do Veículo:', placa);
+            console.log('Número do Apartamento:', apartamento);
+            console.log('Bloco do Apartamento:', bloco);
+            console.log('Modelo do Veículo:', modelo);
+            console.log('Cor do Veículo:', cor);
+            console.log('Número da Vaga de Estacionamento:', vaga);
+
+            // mensagem de confirmação
+            alert('Cadastro realizado com sucesso!');
+        });
+    </script>
 </body>
 </html>
